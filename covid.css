@@ -1,0 +1,73 @@
+#popup{
+  
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    visibility: hidden;
+}
+.popup_container{
+    border-radius:15px 15px 0 0;
+    width: 600px;
+    height: 400px;
+    background-color: brown;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+#close{
+    background-color: #262626;
+    width: 100%;
+    height: 40px;
+    border-radius:15px 15px 0 0;
+    
+}
+#close h1{
+   font-size: 40px;
+   color: snow;
+   font-weight: 400;
+   text-align: right;
+   margin-right: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+
+
+}
+
+#exit:hover{
+    color: red;
+    
+}
+.image{
+    background-color: red;
+    height:100% ;
+    background: url('https://i.imgur.com/4lXXhvV.png');
+    border-radius: 0 0 5px 5px;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+@media only screen and (max-width: 600px) {
+    .popup_container{
+        border-radius:15px 15px 0 0;
+        width: 400px;
+        height: 350px;
+        background-color: brown;
+        margin: 50px auto;
+        box-sizing: border-box;
+    }
+
+    .image{
+        background-color: red;
+        height:100% ;
+        background: url('https://i.imgur.com/4lXXhvV.png');
+        border-radius: 0 0 5px 5px;
+        background-position: center;
+    }
+}
